@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'MuekMod';
+    src: url('SOV_muekmod/SOV_MuekMod.ttf');
+}
+
+p {
+    font-family:"Oswald",cursive;
+    font-size: 3rem;
+    color: rgb(92, 48, 48);
+}
+
+.circle {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tiktok {
+    color:rgb(255, 255, 255);
+    font-size: 400px;
+    text-shadow: 
+        cyan -6px -6px 0px,
+        red 8px 8px 0px;
+    -webkit-text-stroke: 1px white;
+}
+
+
+
+h1{
+    font-family: 'MuekMod',sans-serif;
+    text-align: center;
+    line-height: 2;
+}
+
+h2{
+    font-family: 'MuekMod',sans-serif;
+    text-align: left;
+}
+
+a {
+    font-family: 'MuekMod',sans-serif;
+    text-decoration: none ;
+    color: rgb(29,157,221);
+}
