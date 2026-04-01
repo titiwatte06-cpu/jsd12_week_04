@@ -28,7 +28,37 @@ p {
     -webkit-text-stroke: 1px white;
 }
 
+ul.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+}
 
+/* ul ข้างใน (dropdown) ไม่ต้อง flex */
+ul.dropdown {
+    display: none;
+    position: absolute;
+    background: white;
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background: aquamarine;
+    padding: 0.5rem;
+    border-radius: 6px;
+    list-style: none;
+    white-space: nowrap;  /* เพิ่มตรงนี้ — ไม่ตัดบรรทัด */
+    min-width: 120px;     /* กว้างขั้นต่ำ */
+}
+
+li.has-dropdown:hover .dropdown {
+    display: block;  /* แนวตั้งตามปกติ */
+}
 
 h1{
     font-family: 'MuekMod',sans-serif;
@@ -45,4 +75,12 @@ a {
     font-family: 'MuekMod',sans-serif;
     text-decoration: none ;
     color: rgb(29,157,221);
+}
+
+p:first-child {
+    background-color: bisque;
+}
+
+li > span {
+    background-color: brown;
 }

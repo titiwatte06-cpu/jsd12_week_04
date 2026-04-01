@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    
+    <nav class="flex justify-between w-screen bg-gray-500">
+    <h2 class="font-bold">JSD12</h2>
+    
+    <div class="relative m-4 p-0">
+        <button onclick="document.getElementById('menu').classList.toggle('hidden')">
+        HOME
+        </button>
+        
+        <ul id="menu" class="hidden absolute top-full right-0 bg-white m-4 p-4 whitespace-nowrap">
+        <li>ABOUT US</li>
+        <li>SIGN IN</li>
+        </ul>
+    </div>
+    </nav>
+    <h1 class="text-3xl font-bold underline bg-green-700">
+      Hello world!
+    </h1>
+</body>
+</html>

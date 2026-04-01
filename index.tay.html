@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
     h2 {
-        color: blue;
+        color: white;
         font-size: 50px;
     }
     .container {
@@ -16,6 +16,32 @@
     text-align: left;         /* จัดข้อความกลาง */
     height: 100vh;              /* ความสูงเต็มหน้าจอ */
     }
+
+    nav {
+        background-color: black;
+    }
+
+    .has-dropdown {
+    position: relative;  /* ← เพิ่มตรงนี้ */
+    }
+
+
+    .dropdown {
+    display: none;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    padding: 0.5rem;
+    border-radius: 6px;
+    list-style: none;
+    }
+
+
+    .has-dropdown:hover .dropdown {
+    display: block;
+    background-color: aquamarine;
+    }
+
+
     </style>
 <link rel="stylesheet" href="index.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,9 +50,28 @@
 
 </head>
 <body>
+    <nav>
+        <ul class="nav-links" >
+
+
+            <li class="has-dropdown">
+                <a href="#">บริการ ▾</a>
+
+
+            <ul class="dropdown">
+                <li><a href="www.google.com">ออกแบบ          UI</a></li>
+                <li><a href="#">พัฒนาเว็บ</a></li>
+                <li><a href="#">SEO</a></li>
+            </ul>
+            </li>
+        </ul>
+    </nav>
     <h1 style="font-size: 80px; color: rgb(0, 0, 0);">นี้คือสำนักพิมพ์บางกอก</h1>
     <hr>
     <h2>วันที่ 23 มีนาคม พุทธศักราช 2469 </h2>
+    <ul>
+        <li>jimmy is good boy <span>John</span></li>
+    </ul>
     <p>this is External Style</p>
 <div class="circle">
     <p class="Tiktok">T</p>
