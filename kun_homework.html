@@ -9,13 +9,12 @@
     body {
         margin:0;
         padding:0;
-        background-color: aquamarine;
+        font-family: 'Inter',sans-serif;
+        color: rgb(rgb(0, 23, 37));
     }
 
     .page1 {
         
-        background-color: rgb(255, 142, 127);
-
         text-align: left;
     }
 
@@ -30,7 +29,7 @@
         font-size: 107px;
     }
 
-    .page1 > .header1 > p {
+    .page1 > .heading-section > p {
         font-family: sans-serif;
         font-weight: bold;
         font-size: 21px;
@@ -52,18 +51,80 @@
     border-radius: 24px; /* มนขอบเหมือนต้นฉบับ */
     }
 
+    .capter2 {
+        display: flex;
+        justify-content: center;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
+
+    .content2 {
+        display:flex;
+        margin-left: 320px;
+        margin-right: 320px;
+    }
+
+    .picture-section > img {
+        margin:36px;
+        height: 564px;
+        box-shadow: 18px 18px 0px rgb(10, 122, 187);
+        border-radius: 10px;
+        
+    }
+
+    .title2 {
+        margin-left: 36px;
+    }
+
+    .title2 > h1 {
+        font-size: 3.5rem;
+        font-weight: 800;
+        line-height: 1.1;
+    }
+
+    .title2 > p {
+        font-size: 21px;
+        font-weight: bold;
+    }
+
+    .text2 > a {
+        padding: 10px 24px;
+        box-shadow: 10px 10px 0px rgb(0, 23, 37);
+        background-color: rgb(128, 185, 220);
+        border-radius: 10px;
+        border: 2px solid rgb(0, 23, 37);
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
 </style>
 <body>
     <section class="page1">
         <div class="heading-section">
             <h1>Support economic mobility</h1>
+            <p>Everyone should have access to a good job and income that can help them and their families have a better life.</p>
         </div>
         <div class="image-section">
             <img src="images/smiling-woman-e1690828017538.jpg"/>
         </div>
     </section>
-    <section class="page2">
-
+    <section class="capter2">
+        
+        <div class="content2">
+            <div class="picture-section">
+                <img src="images/picture2-man.jpg"/>
+            </div>
+            <div class="title2">
+                <h1>Generation is a global nonprofit that <br>believes in the <br> power of jobs to <br>change lives</h1>
+                <div class="text2">
+                    <p>We train and place adults into careers that would otherwise be inaccessible. And we advocate to improve the workforce system. Launched in 2015, Generation comprises a global hub and a network of in-country affiliates that span 17 countries.</p>
+                    <a>Learn more about us →</a>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>
